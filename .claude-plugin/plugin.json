@@ -1,0 +1,14 @@
+{
+  "name": "thinking-toolkit-zh",
+  "version": "1.0.0",
+  "description": "12个核心思维与决策框架的深度思考工作法套件。覆盖问清问题、深度学习、解决问题、理性决策与自我认知5大核心场景。",
+  "skills": "./skills/",
+  "author": {
+    "name": "Nick",
+    "url": "https://github.com/Winsaney"
+  },
+  "homepage": "https://github.com/Winsaney/thinking-toolkit-zh",
+  "repository": "https://github.com/Winsaney/thinking-toolkit-zh",
+  "license": "MIT",
+  "keywords": ["thinking-tool", "templates"]
+}
