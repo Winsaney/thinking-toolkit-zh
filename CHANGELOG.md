@@ -30,4 +30,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/zh-CN/
 
 ### Acknowledgements
 
-基于 [Antigravity & 卡兹克]「数字生命卡兹克」沉淀的思维框架重构。感谢原作对核心认知与决策方法论的整理与分享。
+基于 [数字生命卡兹克] 沉淀的思维框架重构。感谢原作对核心认知与决策方法论的整理与分享。
