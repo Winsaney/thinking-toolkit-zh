@@ -1,26 +1,17 @@
 {
   "name": "thinking-toolkit-zh",
-  "version": "1.0.0",
   "description": "基于数字生命卡兹克沉淀的12个核心思维与决策框架的深度思考工作法套件。覆盖问清问题、深度学习、解决问题、理性决策与自我认知5大核心场景。触发词：苏格拉底式提问、双层解释法、反向拆解、横纵分析法、事实核查、专家会诊、第一性原理、跨领域借解、双向钢人论证、用最小实验替代空想、挖掘隐藏天赋、人生设计术",
-  "author": {
+  "owner": {
     "name": "Nick",
-    "email": ""
+    "url": ""
   },
-  "homepage": "https://github.com/Winsaney/thinking-toolkit-zh",
-  "repository": "https://github.com/Winsaney/thinking-toolkit-zh",
-  "license": "MIT",
-  "skills": [
-    "./skills/苏格拉底式提问",
-    "./skills/双层解释法",
-    "./skills/反向拆解",
-    "./skills/横纵分析法",
-    "./skills/事实核查",
-    "./skills/专家会诊",
-    "./skills/第一性原理",
-    "./skills/跨领域借解",
-    "./skills/双向钢人论证",
-    "./skills/用最小实验替代空想",
-    "./skills/挖掘隐藏天赋",
-    "./skills/人生设计术"
+  "plugins": [
+    {
+      "name": "thinking-toolkit-zh",
+      "description": "12个核心思维与决策框架的深度思考工作法套件。覆盖问清问题、深度学习、解决问题、理性决策与自我认知5大核心场景。",
+      "source": "./",
+      "category": "productivity",
+      "tags": ["thinking-tool", "templates"]
+    }
   ]
 }
