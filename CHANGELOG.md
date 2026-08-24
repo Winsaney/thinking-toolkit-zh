@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/lang/zh-CN/).
 
+## [1.1.0] - 2026-08-24
+
+### Added
+
+- 新增 `.codex-plugin/plugin.json`，支持 Codex 与 ChatGPT 插件加载
+- 新增 `.agents/plugins/marketplace.json`，支持从 GitHub 或本地仓库安装 Codex 插件
+
+### Changed
+
+- CodeBuddy、Claude Code 与 Codex 插件清单版本统一升级至 1.1.0
+- 移除聚合 `SKILL.md` 中 Codex 不支持的 `version` frontmatter 字段
+- 事实核查与横纵分析改用宿主无关的联网工具表述
+- README 增加三平台支持矩阵及 Codex 安装、升级与卸载说明
+
 ## [1.0.0] - 2026-08-21
 
 ### Added

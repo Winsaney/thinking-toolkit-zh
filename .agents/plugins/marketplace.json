@@ -1,0 +1,20 @@
+{
+  "name": "thinking-toolkit-zh",
+  "interface": {
+    "displayName": "Thinking Toolkit ZH"
+  },
+  "plugins": [
+    {
+      "name": "thinking-toolkit-zh",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

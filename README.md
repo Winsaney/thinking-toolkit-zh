@@ -1,9 +1,64 @@
 # 深度思考与认知工作法套件 (Thinking Toolkit ZH)
 
-> 基于"数字生命卡兹克"沉淀的 12 个核心思维与决策框架重构，遵循 **Agent Plugins 规范 (v1.0.0)** 开发。
+> 基于"数字生命卡兹克"沉淀的 12 个核心思维与决策框架重构，兼容 **CodeBuddy、Claude Code 与 Codex** 插件规范。
 > 专为中文用户打造，原生支持自然语言意图激活、渐进式加载（Progressive Disclosure）与多轮对话状态机。
 
 > **致谢**：本套件基于 [数字生命卡兹克] 沉淀的思维框架重构。感谢原作对核心认知与决策方法论的整理与分享。
+
+---
+
+## 🚀 安装与使用
+
+| 平台 | 支持方式 |
+| --- | --- |
+| CodeBuddy / WorkBuddy | `.codebuddy-plugin/plugin.json` |
+| Claude Code | `.claude-plugin/plugin.json` 与 Claude Marketplace |
+| Codex | `.codex-plugin/plugin.json` 与仓库级 Codex Marketplace |
+
+### Codex：从 GitHub 安装
+
+```bash
+codex plugin marketplace add Winsaney/thinking-toolkit-zh
+codex plugin add thinking-toolkit-zh@thinking-toolkit-zh
+```
+
+安装后重启 Codex 或开启一个新任务，使新 Skill 进入上下文。
+
+### Codex：本地开发安装
+
+Clone 仓库后，将绝对路径注册为本地 Marketplace，再安装插件：
+
+```bash
+codex plugin marketplace add /absolute/path/to/thinking-toolkit-zh
+codex plugin add thinking-toolkit-zh@thinking-toolkit-zh
+```
+
+更新本地插件后，移除已缓存版本并重新安装：
+
+```bash
+codex plugin remove thinking-toolkit-zh@thinking-toolkit-zh
+codex plugin add thinking-toolkit-zh@thinking-toolkit-zh
+```
+
+从 GitHub 安装的用户可先刷新远程 Marketplace，再重新安装：
+
+```bash
+codex plugin marketplace upgrade thinking-toolkit-zh
+codex plugin add thinking-toolkit-zh@thinking-toolkit-zh
+```
+
+卸载插件和 Marketplace：
+
+```bash
+codex plugin remove thinking-toolkit-zh@thinking-toolkit-zh
+codex plugin marketplace remove thinking-toolkit-zh
+```
+
+### CodeBuddy / WorkBuddy
+
+将此目录放置于项目（`.workbuddy/plugins/`）或系统全局配置目录（`~/.workbuddy/plugins/`）即可自动生效。
+
+在与 Agent 对话时直接用自然语言描述需求（如"帮我双层解释这个概念"、"挖掘我的天赋"），Agent 将按需自动激活对应 Skill。
 
 ---
 
@@ -49,8 +104,15 @@
 
 ```
 thinking-toolkit-zh/
+├── .agents/plugins/
+│   └── marketplace.json         ← Codex 仓库 Marketplace 清单
+├── .codex-plugin/
+│   └── plugin.json              ← Codex 插件清单与展示元数据
 ├── .codebuddy-plugin/
 │   └── plugin.json              ← 插件清单（name/version/12个skill路径）
+├── .claude-plugin/
+│   ├── plugin.json              ← Claude Code 插件清单
+│   └── marketplace.json         ← Claude Marketplace 清单
 ├── SKILL.md                     ← 聚合套件入口（索引12个skill + 五大场景导航）
 ├── README.md                    ← 用户文档（场景/触发示例）
 ├── LICENSE                      ← MIT 许可证
@@ -76,14 +138,6 @@ thinking-toolkit-zh/
             ├── gravity_vs_real_problem.md
             └── odyssey_plan_guide.md
 ```
-
----
-
-## 🚀 安装与使用
-
-将此目录放置于项目（`.workbuddy/plugins/`）或系统全局配置目录（`~/.workbuddy/plugins/`）即可自动生效。
-
-在与 Agent 对话时直接用自然语言描述需求（如"帮我双层解释这个概念"、"挖掘我的天赋"），Agent 将按需自动激活对应 Skill。
 
 ---
 

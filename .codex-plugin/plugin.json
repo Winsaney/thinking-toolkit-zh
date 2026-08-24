@@ -1,0 +1,38 @@
+{
+  "name": "thinking-toolkit-zh",
+  "version": "1.1.0",
+  "description": "12个核心思维与决策框架的中文深度思考工作法套件，覆盖问清问题、深度学习、解决问题、理性决策与自我认知5大场景。",
+  "author": {
+    "name": "Nick",
+    "url": "https://github.com/Winsaney"
+  },
+  "homepage": "https://github.com/Winsaney/thinking-toolkit-zh",
+  "repository": "https://github.com/Winsaney/thinking-toolkit-zh",
+  "license": "MIT",
+  "keywords": [
+    "thinking-tool",
+    "decision-making",
+    "critical-thinking",
+    "productivity",
+    "chinese"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "深度思考与认知工作法套件",
+    "shortDescription": "12 个中文深度思考与决策框架",
+    "longDescription": "覆盖问清问题、深度学习、解决问题、理性决策与自我认知五大场景的中文工作法套件。",
+    "developerName": "Nick",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Research",
+      "Decision Support"
+    ],
+    "websiteURL": "https://github.com/Winsaney/thinking-toolkit-zh",
+    "defaultPrompt": [
+      "帮我用苏格拉底式提问把这个问题想清楚",
+      "对这个说法做事实核查与论证审计",
+      "帮我设计一个 7 天内可完成的最小实验"
+    ]
+  }
+}
